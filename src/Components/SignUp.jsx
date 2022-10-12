@@ -57,7 +57,7 @@ function SignUp() {
         const auth = getAuth()
 
         const userCredential = await createUserWithEmailAndPassword(
-          name,
+          auth,
           email,
           password
         )
